@@ -1,8 +1,6 @@
 module Control_Unit(
     // System Clock
-    input        clk,
     input        rst_n,
-
     // User Interface
     output  reg [1:0]    ALUOp,
     output  reg     MemWrite,RegWrite,
@@ -13,8 +11,21 @@ module Control_Unit(
     output  reg     Jump,
     input   [5:0]   Opcode
 );
+/*******************************************************************************
+ *                                 Main Code
+*******************************************************************************/
 
 always @(*) begin
+    if (rst_n) begin
+        RegWrite = 1'b0;
+        RegDst   = 1'b0;
+        ALUSrc   = 1'b0;
+        Branch   = 1'b0;
+        MemWrite = 1'b0;
+        MemtoReg = 1'b0;
+        ALUOp    = 2'b00;
+        Jump     = 1'b0;
+    end
     case (Opcode)
         // R type no Immediate Instruction
         6'b000000 : begin
@@ -82,7 +93,16 @@ always @(*) begin
             ALUOp    = 2'b00;
             Jump     = 1'b1;
         end
-        default: ;
+        default: begin
+            RegWrite = 1'b0;
+            RegDst   = 1'b0;
+            ALUSrc   = 1'b0;
+            Branch   = 1'b0;
+            MemWrite = 1'b0;
+            MemtoReg = 1'b0;
+            ALUOp    = 2'b00;
+            Jump     = 1'b0;
+        end
     endcase
 end
 

@@ -12,16 +12,18 @@ module Data_Memory(
 );
     integer fd;
     reg [31:0]  DATA_MEM[84:0];
-
-    always @(*) begin
-            RD = DATA_MEM[A];
-    end
-
+/*******************************************************************************
+ *                                 Main Code
+*******************************************************************************/
 
     initial begin
         fd = $fopen("./MEM_Data.txt", "w");
         #500
         $fclose(fd);
+    end
+
+    always @(*) begin
+        RD = DATA_MEM[A];
     end
 
     always @(posedge clk) begin
