@@ -8,4 +8,8 @@ module Imm_Sign_Extend(
 );
     assign  SignImm = {{16{Immediate[15]}}, Immediate[15:0]};
 endmodule
+<<<<<<< Updated upstream
 //
+=======
+
+>>>>>>> Stashed changes
