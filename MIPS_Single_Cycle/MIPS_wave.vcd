@@ -1,0 +1,260 @@
+$date
+	Mon Nov 28 19:52:59 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_MIPS_Single_Cycle $end
+$var reg 1 ! clk $end
+$var reg 32 " cnt [31:0] $end
+$var reg 1 # rst_n $end
+$scope module u_MIPS_Single_Cycle $end
+$var wire 1 $ PCSrc $end
+$var wire 32 % WriteData [31:0] $end
+$var wire 1 ! clk $end
+$var wire 1 # rst_n $end
+$var wire 1 & Zero $end
+$var wire 5 ' WriteReg [4:0] $end
+$var wire 32 ( WD3 [31:0] $end
+$var wire 32 ) SrcB [31:0] $end
+$var wire 32 * SrcA [31:0] $end
+$var wire 32 + SignImm [31:0] $end
+$var wire 1 , RegWrite $end
+$var wire 1 - RegDst $end
+$var wire 32 . ReadData [31:0] $end
+$var wire 32 / RD2 [31:0] $end
+$var wire 32 0 PC [31:0] $end
+$var wire 1 1 MemtoReg $end
+$var wire 1 2 MemWrite $end
+$var wire 1 3 Jump $end
+$var wire 32 4 Instr [31:0] $end
+$var wire 1 5 Branch $end
+$var wire 1 6 ALUSrc $end
+$var wire 32 7 ALUResult [31:0] $end
+$var wire 2 8 ALUOp [1:0] $end
+$var wire 3 9 ALUControl [2:0] $end
+$scope module u_ALU $end
+$var wire 32 : SrcB [31:0] $end
+$var wire 1 & Zero $end
+$var wire 32 ; SrcA [31:0] $end
+$var wire 3 < ALUControl [2:0] $end
+$var reg 32 = ALUResult [31:0] $end
+$upscope $end
+$scope module u_ALU_Control_Unit $end
+$var wire 6 > Funct [5:0] $end
+$var wire 2 ? ALUOp [1:0] $end
+$var reg 3 @ ALUControl [2:0] $end
+$upscope $end
+$scope module u_Control_Unit $end
+$var wire 6 A Opcode [5:0] $end
+$var wire 1 ! clk $end
+$var wire 1 # rst_n $end
+$var reg 2 B ALUOp [1:0] $end
+$var reg 1 6 ALUSrc $end
+$var reg 1 5 Branch $end
+$var reg 1 3 Jump $end
+$var reg 1 2 MemWrite $end
+$var reg 1 1 MemtoReg $end
+$var reg 1 - RegDst $end
+$var reg 1 , RegWrite $end
+$upscope $end
+$scope module u_Data_Memory $end
+$var wire 32 C A [31:0] $end
+$var wire 32 D WD [31:0] $end
+$var wire 1 2 WE $end
+$var wire 1 ! clk $end
+$var wire 1 # rst_n $end
+$var reg 32 E RD [31:0] $end
+$var integer 32 F fd [31:0] $end
+$upscope $end
+$scope module u_Imm_Sign_Extend $end
+$var wire 16 G Immediate [15:0] $end
+$var wire 32 H SignImm [31:0] $end
+$upscope $end
+$scope module u_Instr_Memory $end
+$var wire 32 I RD [31:0] $end
+$var wire 32 J A [31:0] $end
+$upscope $end
+$scope module u_PC_Counter $end
+$var wire 1 3 Jump $end
+$var wire 26 K Jump_low_26Bit [25:0] $end
+$var wire 1 $ PCSrc $end
+$var wire 32 L SignImm [31:0] $end
+$var wire 1 ! clk $end
+$var wire 1 # rst_n $end
+$var wire 32 M PC_Next [31:0] $end
+$var wire 32 N PCPlus4 [31:0] $end
+$var wire 32 O PCJump [31:0] $end
+$var wire 32 P PCBranch [31:0] $end
+$var reg 32 Q PC [31:0] $end
+$upscope $end
+$scope module u_Reg_File $end
+$var wire 5 R A1 [4:0] $end
+$var wire 5 S A2 [4:0] $end
+$var wire 5 T A3 [4:0] $end
+$var wire 32 U RD1 [31:0] $end
+$var wire 32 V RD2 [31:0] $end
+$var wire 1 , RegWrite $end
+$var wire 32 W WD3 [31:0] $end
+$var wire 1 ! clk $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx00 O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+b10000000000000000000000000000011 F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+x6
+x5
+bx 4
+x3
+x2
+x1
+bx 0
+bx /
+bx .
+x-
+x,
+bx +
+bx *
+bx )
+bx (
+bx '
+x&
+bx %
+x$
+0#
+b1 "
+0!
+$end
+#10
+b0xxxxxxxxxxxxxxxxxxxxxxxxxx00 O
+b100 N
+b0 0
+b0 J
+b0 Q
+1!
+#20
+b10 "
+1#
+0!
+#30
+bx00 O
+bx N
+bx 0
+bx J
+bx Q
+1!
+#40
+b11 "
+0!
+#50
+1!
+#60
+b100 "
+0!
+#70
+1!
+#80
+b101 "
+0!
+#90
+1!
+#100
+b110 "
+0!
+#110
+1!
+#120
+b111 "
+0!
+#130
+1!
+#140
+b1000 "
+0!
+#150
+1!
+#160
+b1001 "
+0!
+#170
+1!
+#180
+b1010 "
+0!
+#190
+1!
+#200
+b1011 "
+0!
+#210
+1!
+#220
+b1100 "
+0!
+#230
+1!
+#240
+b1101 "
+0!
+#250
+1!
+#260
+b1110 "
+0!
+#270
+1!
+#280
+b1111 "
+0!
+#290
+1!
+#300
+b10000 "
+0!
+#310
+1!
+#320
+b10001 "
+0!
+#330
+1!

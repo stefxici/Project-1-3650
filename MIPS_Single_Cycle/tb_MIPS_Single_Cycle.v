@@ -1,4 +1,14 @@
 `timescale 1ps/1ps
+`include "ALU_Control_Unit.v"
+`include "ALU.v"
+`include "Control_Unit.v"
+`include "Data_Memory.v"
+`include "Imm_Sign_Extend.v"
+`include "Instr_Memory.v"
+`include "MIPS_Single_Cycle.v"
+`include "PC_Counter.v"
+`include "Reg_File.v"
+
 module tb_MIPS_Single_Cycle();
 
 reg clk,rst_n;
