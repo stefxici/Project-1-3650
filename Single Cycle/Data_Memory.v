@@ -19,22 +19,14 @@ module Data_Memory(
 
 
     initial begin
-<<<<<<< HEAD
-        fd = $fopen("./MEM_Data.txt", "w");
-=======
         fd = $fopen("./MEM_Data.txt", "w");  
->>>>>>> Leanna
         #500
         $fclose(fd);
     end
 
     always @(posedge clk) begin
         if (WE) begin
-<<<<<<< HEAD
-            DATA_MEM[A] <= WD;
-=======
             DATA_MEM[A] <= WD; 
->>>>>>> Leanna
             $fdisplay(fd,"The Write Address A is %h", A);
             $fdisplay(fd,"DATA_MEM[A] is %h", WD);
         end

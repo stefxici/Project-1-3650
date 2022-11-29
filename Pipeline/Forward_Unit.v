@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 module Forward_Unit(
     // System Clock
     input        rst_n,
@@ -93,4 +90,3 @@ module Forward_Unit(
 
     // addi Hazard: EX/MEM.RegisterRd = 
 endmodule
->>>>>>> Leanna

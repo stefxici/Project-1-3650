@@ -13,11 +13,7 @@ module ALU(
         case (ALUControl)
             3'b010 : begin
                 ALUResult = SrcA + SrcB;
-<<<<<<< HEAD
-            end
-=======
             end 
->>>>>>> Leanna
             3'b110 : begin
                 ALUResult = SrcA - SrcB;
             end

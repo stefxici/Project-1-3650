@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 module IF_ID_Register(
     // System Clock
     input        clk,
@@ -41,4 +38,3 @@ module IF_ID_Register(
     end
 
 endmodule
->>>>>>> Leanna
