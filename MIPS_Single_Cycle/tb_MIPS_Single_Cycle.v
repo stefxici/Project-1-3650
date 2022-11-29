@@ -6,7 +6,7 @@ reg [31:0] cnt;
 
 initial
 begin            
-    $dumpfile("MIPS_wave.vcd");       
+    $dumpfile("MIPS_wave.vcd");        
     $dumpvars(0, tb_MIPS_Single_Cycle);    
 end
 
