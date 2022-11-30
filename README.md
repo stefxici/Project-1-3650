@@ -10,6 +10,19 @@ This Single-Cycle Implementation handles the subset of instructions [ALU funcs, 
 
 ![image](https://user-images.githubusercontent.com/97343745/204700081-77cc7ea8-87e5-4ae6-aa25-9e570f50dada.png)
 
+Instruction Memory:
+
+Sign Extend:
+
+Program Counter:
+
+Register File:
+
+Alu and Alu Control:
+
+Data Memory:
+
+Control Unit:
 
 
 
@@ -20,6 +33,22 @@ This Single-Cycle Implementation handles the subset of instructions [ALU funcs, 
 
 
 ## 5 Stage Pipeline Implementation
+This--
+
+Instruction Memory:
+
+Sign Extend:
+
+Program Counter:
+
+Register File:
+
+Alu and Alu Control:
+
+Data Memory:
+
+Control Unit:
+
 ![MIPS Pipeline pt 1](https://user-images.githubusercontent.com/97343745/204692206-d0226dab-1aea-46b2-8a9c-639d498323e9.png)
 
 ![MIPS Pipeline pt 2](https://user-images.githubusercontent.com/97343745/204692340-9322fc92-1cbf-43db-b7bd-88a68136b2c6.png)
