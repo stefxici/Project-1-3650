@@ -40,9 +40,6 @@ module ID_EX_Register(
     output  reg         ALUSrcE,
     output  reg [2:0]   ALUControlE
 );
-/*******************************************************************************
- *                                 Main Code
-*******************************************************************************/
 
     always @(posedge clk or negedge rst_n ) begin
         if(!rst_n)begin

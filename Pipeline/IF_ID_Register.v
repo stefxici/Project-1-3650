@@ -13,9 +13,6 @@ module IF_ID_Register(
     output  reg [31:0]  PCPlus4D,
     output  reg [31:0]  InstrD
 );
-/*******************************************************************************
- *                                 Main Code
-*******************************************************************************/
 
     always @(posedge clk ) begin
         if (~rst_n) begin

@@ -17,9 +17,7 @@ module Forward_Unit(
     output  reg         ForwardAD,
     output  reg         ForwardBD
 );
-/*******************************************************************************
- *                                 Main Code
-*******************************************************************************/
+
 
     always @(*) begin
         if (~rst_n) begin
