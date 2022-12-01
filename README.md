@@ -4,7 +4,7 @@
 
 
 
-## Single Cycle Implementation
+## Single Cycle Implementation:
 
 This Single-Cycle Implementation handles the subset of instructions [ALU funcs, lw/sw, beq, jump]. It follows the simple datapath in chapter 4 section 4: 
 
@@ -32,7 +32,7 @@ Control Unit:
 part of the processor that generates control signals in order to operate in the way which is chosen by the instruction like if beq is chosen, etc.
 
 
-## Single Cycle Waves
+## Single Cycle Waves:
 
 ![MIPS Single Cycle Wave pt 1](https://user-images.githubusercontent.com/97343745/204691965-04af2abd-99ff-4a65-b5a5-202a6c15a9be.png)
 
@@ -40,7 +40,7 @@ part of the processor that generates control signals in order to operate in the 
 
 
 
-## 5 Stage Pipeline Implementation
+## 5 Stage Pipeline Implementation:
 This--
 
 Instruction Memory:
@@ -57,6 +57,7 @@ Data Memory:
 
 Control Unit:
 
+## 5 Stage Pipeline Waves:
 ![MIPS Pipeline pt 1](https://user-images.githubusercontent.com/97343745/204692206-d0226dab-1aea-46b2-8a9c-639d498323e9.png)
 
 ![MIPS Pipeline pt 2](https://user-images.githubusercontent.com/97343745/204692340-9322fc92-1cbf-43db-b7bd-88a68136b2c6.png)
