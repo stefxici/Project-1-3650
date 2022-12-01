@@ -10,19 +10,26 @@ This Single-Cycle Implementation handles the subset of instructions [ALU funcs, 
 
 ![image](https://user-images.githubusercontent.com/97343745/204700081-77cc7ea8-87e5-4ae6-aa25-9e570f50dada.png)
 
-Instruction Memory: stores the instructions of the program given the address which is loaded using $readmemh into register and from their it assigns the instruction. 
+Instruction Memory: 
+stores the instructions of the program given the address which is loaded using $readmemh into register and from their it assigns the instruction. 
 
-Sign Extend: this incase for instance is the lw and sw instructions offsets are 16 bit value, this module will then bring the offset to be 32 bits .
+Sign Extend: 
+this incase for instance is the lw and sw instructions offsets are 16 bit value, this module will then bring the offset to be 32 bits .
 
-Program Counter: holds the address of the current instructions and next instruction and since this is a 32 bit processor it increments the address by 4 to fetch the next instruction through an adder. This address increment happens at every clock cycle. Our code also contains the branching and jumping as it takes in input for both which can be seen with "input [31:0] SignImm", "input jump", and "input [25:0] jump_low_26bit".
+Program Counter: 
+holds the address of the current instructions and next instruction and since this is a 32 bit processor it increments the address by 4 to fetch the next instruction through an adder. This address increment happens at every clock cycle. Our code also contains the branching and jumping as it takes in input for both which can be seen with "input [31:0] SignImm", "input jump", and "input [25:0] jump_low_26bit".
 
-Register File: encloses all the registers that are independent of the processor which is to perform read and write operations which is done by getting the input and assigning whether its for reading or writing. 
+Register File: 
+encloses all the registers that are independent of the processor which is to perform read and write operations which is done by getting the input and assigning whether its for reading or writing. 
 
-Alu and Alu Control: Alu control is what signals the instructions that will be preformed for both the I-Type instructions and R-Type instructions. I-type uses the opcode and R-Tyoe uses the function field. This can be seen in the code for Alu_Control_Unit.v as you will see under "always @" that their is two cases: Funct and ALUOp which then give you the options for instructions depending on the input. As for Alu.v, it takes in the input from the alu contol and also the values for A and B and it then performs its addition, subtraction, and etc. 
+Alu and Alu Control: 
+Alu control is what signals the instructions that will be preformed for both the I-Type instructions and R-Type instructions. I-type uses the opcode and R-Tyoe uses the function field. This can be seen in the code for Alu_Control_Unit.v as you will see under "always @" that their is two cases: Funct and ALUOp which then give you the options for instructions depending on the input. As for Alu.v, it takes in the input from the alu contol and also the values for A and B and it then performs its addition, subtraction, and etc. 
 
-Data Memory: is the read-write memory which takes in addresses and can then fetch or store the data given depending on the instruction chosen.
+Data Memory: 
+is the read-write memory which takes in addresses and can then fetch or store the data given depending on the instruction chosen.
 
-Control Unit: part of the processor that generates control signals in order to operate in the way which is chosen by the instruction like if beq is chosen, etc.
+Control Unit: 
+part of the processor that generates control signals in order to operate in the way which is chosen by the instruction like if beq is chosen, etc.
 
 
 ## Single Cycle Waves
