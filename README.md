@@ -41,7 +41,15 @@ part of the processor that generates control signals in order to operate in the 
 
 
 ## 5 Stage Pipeline Implementation:
-This--
+A five stage pipeline means that up to five instructions will be executed during any single clock cycle unlive above as the single only does one instruction hence the name. Futhermore, the datapath then has to be divided into 5 pieces which are:
+1) IF: Instruction fetch
+2) ID: Instruction decode and register file read
+3) EX: Execution or address calculatiom
+4) MEM: Data memory access
+5) WB: Write back
+
+![image](https://user-images.githubusercontent.com/97343745/205169458-79ddd5c4-e368-4c03-ae91-5e4cdd0df17f.png)
+
 
 Instruction Memory:
 
