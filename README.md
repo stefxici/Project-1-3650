@@ -12,7 +12,7 @@ This Single-Cycle Implementation handles the subset of instructions [ALU funcs, 
 
 Instruction Memory: stores the instructions of the program given the address which is loaded using $readmemh into register and from their it assigns the instruction. 
 
-Sign Extend: this incase for instance is the lw and sw instructions offsets are 16 bit value, this module will then bring the offset to be 32 bits 
+Sign Extend: this incase for instance is the lw and sw instructions offsets are 16 bit value, this module will then bring the offset to be 32 bits .
 
 Program Counter: holds the address of the current instructions and next instruction and since this is a 32 bit processor it increments the address by 4 to fetch the next instruction through an adder. This address increment happens at every clock cycle. Our code also contains the branching and jumping as it takes in input for both which can be seen with "input [31:0] SignImm", "input jump", and "input [25:0] jump_low_26bit".
 
@@ -22,9 +22,10 @@ Alu and Alu Control: Alu control is what signals the instructions that will be p
 
 Data Memory: is the read-write memory which takes in addresses and can then fetch or store the data given depending on the instruction chosen.
 
-Control Unit: part of the processor that generates control signals in order to operate in the way which is chosen by the instruction
+Control Unit: part of the processor that generates control signals in order to operate in the way which is chosen by the instruction like if beq is chosen, etc.
 
 
+## Single Cycle Waves
 
 ![MIPS Single Cycle Wave pt 1](https://user-images.githubusercontent.com/97343745/204691965-04af2abd-99ff-4a65-b5a5-202a6c15a9be.png)
 
