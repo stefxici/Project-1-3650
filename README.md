@@ -47,9 +47,11 @@ A five stage pipeline means that up to five instructions will be executed during
 3) EX: Execution or address calculatiom
 4) MEM: Data memory access
 5) WB: Write back
+The difference between the pipeline and single datapath is that pipeline has a faster perfomance due to it processing more instructions unlike the single datapath.
 
 ![image](https://user-images.githubusercontent.com/97343745/205169458-79ddd5c4-e368-4c03-ae91-5e4cdd0df17f.png)
 
+An important thing to note is that the pipeline implementation has hazards, which is when the next instruction can't execute in the next clock cycle. There are 3 different types: 
 
 Instruction Memory:
 
