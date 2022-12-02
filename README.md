@@ -77,3 +77,4 @@ Control Unit:
 ## Acknowledgements
 
  - credit to Hola39e [https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor]
+ - credit to our textbook: Computer Organization and Design and their authors
