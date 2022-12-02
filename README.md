@@ -54,7 +54,8 @@ The difference between the pipeline and single datapath is that pipeline has a f
 An important thing to note is that the pipeline implementation has hazards, which is when the next instruction can't execute in the next clock cycle. There are 3 different types: 
 1) Structural Hazards: is when the hardware can't support the combination of instructions that we want to execute in the same clock cycle
 2) Data Hazards: is when the pipeline must be stalled because one step must wait for another to complete [this has a resove which is called Fowarding which is implemented in this code and what it does is it retrieves the missing data element from internal buffers rather than waiting for it to arrive from programmer-visible registers or memory]
-3)
+3) Load Use Data Hazard: is a form of data hazard in which the data being loaded by a load instruction hasn't become yet available when it is needed by another instruction [this also has a resolve which is also implemented in this code calles Pipeline Stall whichall it does is iniate a stall to resolve the hazard]
+4) 
 
 Instruction Memory:
 
