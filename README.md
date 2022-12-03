@@ -44,7 +44,7 @@ part of the processor that generates control signals in order to operate in the 
 A five stage pipeline means that up to five instructions will be executed during any single clock cycle unlive above as the single only does one instruction hence the name. Futhermore, the datapath then has to be divided into 5 pieces which are:
 1) IF: Instruction fetch
 2) ID: Instruction decode and register file read
-3) EX: Execution or address calculatiom
+3) EX: Execution or address calculation
 4) MEM: Data memory access
 5) WB: Write back
 The difference between the pipeline and single datapath is that pipeline has a faster perfomance due to it processing more instructions unlike the single datapath.
@@ -82,16 +82,16 @@ Branch Unit:
 checks for the branches also does the jump
 
 EX_MEM_Register:
-
+mainly Data memory access
 
 ID_EX_Register:
-
+mainly Execution or address calculation
 
 IF_ID_Register:
-
+mainly Instruction fetch
 
 MEM_Wb_Register:
-
+mainly handles the write back
 
 Forward Unit:
 the forward fix for data hazards
