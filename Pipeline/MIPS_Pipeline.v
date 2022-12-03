@@ -25,9 +25,6 @@ module MIPS_Pipeline(
     wire [31:0]     ReadDataW,ResultW,ReadDataM;
     wire [31:0]     SignImm,SignImmE,RD1E,RD2E,SrcB_Forward;
     wire [31:0]     Instr,InstrD,PCPlus4D,PCPlus4F,RD1,RD2;
-/*******************************************************************************
- *                                 Main Code
-*******************************************************************************/
 
     assign ResultW          = MemtoRegW ? ReadDataW : ALUOutW;
     assign WriteRegE        = RegDstE ? RdE : RtE;
