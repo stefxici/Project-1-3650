@@ -78,6 +78,27 @@ is the read-write memory which takes in addresses and can then fetch or store th
 Control Unit:
 part of the processor that generates control signals in order to operate in the way which is chosen by the instruction like if beq is chosen, etc. This code is different from the single as it has if statement for the system clock and a default.
 
+Branch Unit:
+checks for the branches also does the jump
+
+EX_MEM_Register:
+
+
+ID_EX_Register:
+
+
+IF_ID_Register:
+
+
+MEM_Wb_Register:
+
+
+Forward Unit:
+the forward fix for data hazards
+
+Stall Unit:
+the stalling fix for load use data hazards
+
 ## 5 Stage Pipeline Waves:
 ![MIPS Pipeline pt 1](https://user-images.githubusercontent.com/97343745/204692206-d0226dab-1aea-46b2-8a9c-639d498323e9.png)
 
