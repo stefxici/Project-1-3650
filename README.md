@@ -103,6 +103,11 @@ the stalling fix for load use data hazards
 ![MIPS Pipeline pt 1](https://user-images.githubusercontent.com/97343745/204692206-d0226dab-1aea-46b2-8a9c-639d498323e9.png)
 
 ![MIPS Pipeline pt 2](https://user-images.githubusercontent.com/97343745/204692340-9322fc92-1cbf-43db-b7bd-88a68136b2c6.png)
+
+## Contributions
+- Everyone in the group: Estefania, Austin and Leanna have comtributed to this project and report. We all also learned a lot about mips prcoessor and how these different processes affect performance, etc.
+- We also learned even with a more efficient process like pipelining there are hazards we need to watch out for and have measures in which to fix and address them.
+
 ## Acknowledgements
 
  - credit to Hola39e [https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor]
